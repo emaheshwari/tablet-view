@@ -25,16 +25,19 @@
         <h1>recipes</h1>
     </header>
 
+    <ul class="pet-links">
+        <li class="pet-link"><a href="#pbj">PB&J</a></li>
+        <li class="pet-link"><a href="#choco-cookies">Double Chocolate Cookies</a></li>
+        <li class="pet-link"><a href="#tom-eggs">Tomato and Eggs</a></li>
+        <li class="pet-link"><a href="#tom-basil">Tomato Basil Pasta</a></li>
+        <li class="pet-link"><a href="#mapo">Mapo Tofu</a></li>
+
+    </ul>
+
     <main id="main">
 
-        <h3>How many recipes have you made from this page?</p>
-        <form id="recipeForm">
-            <input type="number" id="recipeCount" min="0">
-            <button type="button" onclick="checkRecipes()">Submit</button>
-        </form>
-        <div id="message"></div>
-
         <div>
+            <a id="pbj"></a>
             <h2>Peanut Butter and Jelly Sandwich</h2>
             <div class="recipe-info">
                 <p>Origin: American</p>
@@ -74,6 +77,7 @@
 
         </div>
         <div>
+            <a id="choco-cookies"></a>
             <h2>Double Chocolate Cookies</h2>
             <div class="recipe-info">
                 <p>Origin: Michigan</p>
@@ -126,6 +130,7 @@
 
         </div>
         <div>
+            <a id="tom-eggs"></a>
             <h2>Tomato and Eggs</h2>
             <div class="recipe-info">
                 <p>Origin: China</p>
@@ -166,6 +171,7 @@
 
         </div>
         <div>
+            <a id="tom-basil"></a>
             <h2>Tomato Basil Pasta</h2>
             <div class="recipe-info">
                 <p>Origin: Italian</p>
@@ -216,6 +222,7 @@
 
         </div>
         <div>
+            <a id="mapo"></a>
             <h2>Mapo Tofu</h2>
             <div class="recipe-info">
                 <p>Origin: China</p>
@@ -259,21 +266,6 @@
 
         </div>
     </main>
-
-    <script>
-        function checkRecipes() {
-            var recipeCount = parseInt(document.getElementById('recipeCount').value);
-
-            if (recipeCount === 5) {
-                document.getElementById('message').innerHTML = "";
-                alert("Congratulations! You've made all 5 recipes.");
-            } else if (recipeCount > 5) {
-                document.getElementById('message').innerHTML = "There's only 5 recipes on this page!";
-            } else {
-                document.getElementById('message').innerHTML = "Cool!";
-            }
-        }
-    </script>
 
 
 </body>
